@@ -6,7 +6,7 @@ website:
   title: ""
   favicon: images/prototyping-favicon.png
   navbar:
-    background: light
+    background: #990033
     left:
       - href: index.qmd
         text: Home
@@ -30,16 +30,8 @@ website:
 format:
   html:
     theme: cosmo
-    css:
-      - ./styles.css
+    css: styles.css
     toc: true
     include-in-header:
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-          <style>
-            :root { --raspberry-pink: #990033; --lime-green: #d1e231; }
-            #quarto-header { background-color: var(--raspberry-pink) !important; }
-            #quarto-header * { color: white !important; }
-            #quarto-header .navbar { background-color: var(--raspberry-pink) !important; background: var(--raspberry-pink) !important; border: none !important; }
-            #quarto-header .navbar-nav .nav-link:hover, #quarto-header .navbar-nav .nav-link:focus { color: var(--lime-green) !important; }
-          </style>
