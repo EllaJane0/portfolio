@@ -1,0 +1,6 @@
+.quarto
+.git
+.github
+*.qmd
+README.md
+styles.css

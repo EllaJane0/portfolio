@@ -1,0 +1,426 @@
+/* Custom styles for portfolio website */
+
+/* Color Palette Variables */
+:root {
+  --raspberry-pink: #990033;
+  --lime-green: #d1e231;
+  --cream: #faf0e6;
+  --beige: #f5f5dc;
+  --text-dark: #2c3e50;
+  --text-medium: #34495e;
+  --text-light: #6c757d;
+  --border-light: #e9ecef;
+}
+
+/* Improve overall layout and spacing */
+.quarto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Center and improve navigation */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Improve main content spacing */
+.quarto-title-banner {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.quarto-title-block .quarto-title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.quarto-title-block .quarto-title h1 {
+  text-align: center;
+}
+
+/* Center the subtitle and other title elements */
+.quarto-title-block .description {
+  text-align: center;
+}
+
+.quarto-title-block .quarto-categories {
+  justify-content: center;
+}
+
+/* Hero banner styling */
+.hero-banner {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--beige) 100%);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  border: 1px solid var(--border-light);
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--raspberry-pink);
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.hero-banner .btn {
+  margin: 0.25rem;
+  text-decoration: none;
+}
+
+.hero-banner .btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Better spacing for main content */
+main {
+  padding: 2rem 0;
+  line-height: 1.6;
+}
+
+/* Improve project grid layout */
+.grid {
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.g-col-12.g-col-md-6 {
+  padding: 1.5rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: var(--cream);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.g-col-12.g-col-md-6:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Improve typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--raspberry-pink);
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-medium);
+}
+
+/* Better paragraph spacing */
+p {
+  margin-bottom: 1.2rem;
+}
+
+/* Improve list styling */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Skills section styling */
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "▶";
+  color: var(--lime-green);
+  position: absolute;
+  left: 0;
+}
+
+/* About page improvements */
+.about-contents {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .quarto-container {
+    padding: 0 15px;
+  }
+  
+  .grid {
+    gap: 1rem;
+  }
+  
+  .g-col-12.g-col-md-6 {
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 1rem 0;
+  }
+}
+
+/* Footer spacing */
+.nav-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Bootstrap primary color override */
+.btn-primary {
+  background-color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #7a0026 !important;
+  border-color: #7a0026 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+/* Navbar and header overrides */
+.navbar, .navbar-expand-lg, .navbar-light, .bg-primary {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+  color: var(--lime-green) !important;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dropdown menu overrides */
+.dropdown-menu {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #7a0026 !important;
+  color: white !important;
+}
+
+/* Footer overrides */
+.nav-footer {
+  background-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+.nav-footer a {
+  color: white !important;
+}
+
+.nav-footer a:hover {
+  color: var(--lime-green) !important;
+}
+
+/* Sidebar overrides */
+.sidebar, .sidebar-navigation {
+  background-color: white !important;
+}
+
+.sidebar .nav-link {
+  color: var(--raspberry-pink) !important;
+}
+
+.sidebar .nav-link:hover {
+  color: #7a0026 !important;
+}
+
+/* Table of contents overrides */
+.quarto-secondary-nav {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.quarto-secondary-nav .nav-link {
+  color: white !important;
+}
+
+/* Any remaining blue elements */
+.text-primary {
+  color: var(--raspberry-pink) !important;
+}
+
+.bg-primary {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.border-primary {
+  border-color: var(--raspberry-pink) !important;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: var(--raspberry-pink);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-dark);
+  text-decoration: underline;
+}
+
+/* Code block styling */
+pre {
+  background: var(--beige);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+/* Table styling */
+table {
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+th {
+  background-color: var(--cream);
+  font-weight: 600;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Profile image styling for about pages */
+.about-image {
+  border-radius: 50%;
+  max-width: 200px;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+/* Hero banner profile image - circular and centered */
+.hero-banner img.rounded-circle {
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 50% !important;
+}
+
+/* Comprehensive sidebar text selection color override */
+.sidebar ::selection,
+.sidebar-navigation ::selection,
+.quarto-secondary-nav ::selection,
+.sidebar .nav-link ::selection,
+.quarto-sidebar ::selection,
+.quarto-sidebar-menu ::selection,
+.quarto-sidebar-content ::selection,
+nav.sidebar ::selection,
+.sidebar nav ::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+.sidebar ::-moz-selection,
+.sidebar-navigation ::-moz-selection,
+.quarto-secondary-nav ::-moz-selection,
+.sidebar .nav-link ::-moz-selection,
+.quarto-sidebar ::-moz-selection,
+.quarto-sidebar-menu ::-moz-selection,
+.quarto-sidebar-content ::-moz-selection,
+nav.sidebar ::-moz-selection,
+.sidebar nav ::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+/* Global text selection override for lime green */
+::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+/* Table of contents specific selection override */
+.quarto-toc ::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+.quarto-toc ::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
