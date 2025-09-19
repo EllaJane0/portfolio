@@ -31,7 +31,7 @@ format:
   html:
     theme: cosmo
     css:
-      - styles.css
+      - ./styles.css
     toc: true
     include-in-header:
       - text: |
