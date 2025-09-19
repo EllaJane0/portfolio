@@ -6,7 +6,7 @@ website:
   title: ""
   favicon: images/prototyping-favicon.png
   navbar:
-    background: primary
+    background: dark
     left:
       - href: index.qmd
         text: Home
