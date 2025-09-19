@@ -1,5 +1,11 @@
 {
   "buildCommand": null,
   "outputDirectory": "_site",
-  "installCommand": "echo 'No install needed'"
+  "installCommand": "echo 'No install needed'",
+  "routes": [
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    }
+  ]
 }
