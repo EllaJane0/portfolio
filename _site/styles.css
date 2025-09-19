@@ -25,30 +25,37 @@
 }
 
 /* Override dark theme with custom raspberry pink navbar */
+.navbar[data-bs-theme="dark"],
 .navbar-dark {
   background-color: var(--raspberry-pink) !important;
   background: var(--raspberry-pink) !important;
 }
 
+.navbar[data-bs-theme="dark"] .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link {
   color: white !important;
   font-weight: 500;
 }
 
+.navbar[data-bs-theme="dark"] .navbar-nav .nav-link:hover,
+.navbar[data-bs-theme="dark"] .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
   color: var(--lime-green) !important;
 }
 
+.navbar[data-bs-theme="dark"] .navbar-brand,
 .navbar-dark .navbar-brand {
   color: white !important;
   font-weight: 600;
 }
 
+.navbar[data-bs-theme="dark"] .navbar-toggler,
 .navbar-dark .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+.navbar[data-bs-theme="dark"] .navbar-toggler-icon,
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
