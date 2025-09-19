@@ -1,5 +1,17 @@
 /* Custom styles for portfolio website */
 
+/* Color Palette Variables */
+:root {
+  --raspberry-pink: #990033;
+  --lime-green: #d1e231;
+  --cream: #faf0e6;
+  --beige: #f5f5dc;
+  --text-dark: #2c3e50;
+  --text-medium: #34495e;
+  --text-light: #6c757d;
+  --border-light: #e9ecef;
+}
+
 /* Improve overall layout and spacing */
 .quarto-container {
   max-width: 1200px;
@@ -50,16 +62,16 @@
 .hero-banner {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--beige) 100%);
   border-radius: 12px;
   margin-bottom: 3rem;
-  border: 1px solid #dee2e6;
+  border: 1px solid var(--border-light);
 }
 
 .hero-banner h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: var(--raspberry-pink);
   margin-bottom: 0.5rem;
 }
 
@@ -96,9 +108,9 @@ main {
 
 .g-col-12.g-col-md-6 {
   padding: 1.5rem;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--border-light);
   border-radius: 8px;
-  background: #f8f9fa;
+  background: var(--cream);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -116,13 +128,13 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  color: #2c3e50;
+  color: var(--raspberry-pink);
 }
 
 h3 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  color: #34495e;
+  color: var(--text-medium);
 }
 
 /* Better paragraph spacing */
@@ -154,7 +166,7 @@ li {
 
 .skills-list li::before {
   content: "▶";
-  color: #007bff;
+  color: var(--lime-green);
   position: absolute;
   left: 0;
 }
@@ -191,22 +203,131 @@ li {
   border-top: 1px solid #e9ecef;
 }
 
+/* Bootstrap primary color override */
+.btn-primary {
+  background-color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #7a0026 !important;
+  border-color: #7a0026 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: var(--raspberry-pink) !important;
+  border-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+/* Navbar and header overrides */
+.navbar, .navbar-expand-lg, .navbar-light, .bg-primary {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+  color: var(--lime-green) !important;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dropdown menu overrides */
+.dropdown-menu {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #7a0026 !important;
+  color: white !important;
+}
+
+/* Footer overrides */
+.nav-footer {
+  background-color: var(--raspberry-pink) !important;
+  color: white !important;
+}
+
+.nav-footer a {
+  color: white !important;
+}
+
+.nav-footer a:hover {
+  color: var(--lime-green) !important;
+}
+
+/* Sidebar overrides */
+.sidebar, .sidebar-navigation {
+  background-color: white !important;
+}
+
+.sidebar .nav-link {
+  color: var(--raspberry-pink) !important;
+}
+
+.sidebar .nav-link:hover {
+  color: #7a0026 !important;
+}
+
+/* Table of contents overrides */
+.quarto-secondary-nav {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.quarto-secondary-nav .nav-link {
+  color: white !important;
+}
+
+/* Any remaining blue elements */
+.text-primary {
+  color: var(--raspberry-pink) !important;
+}
+
+.bg-primary {
+  background-color: var(--raspberry-pink) !important;
+}
+
+.border-primary {
+  border-color: var(--raspberry-pink) !important;
+}
+
 /* Link styling */
 a {
   text-decoration: none;
-  color: #007bff;
+  color: var(--raspberry-pink);
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #0056b3;
+  color: var(--text-dark);
   text-decoration: underline;
 }
 
 /* Code block styling */
 pre {
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
+  background: var(--beige);
+  border: 1px solid var(--border-light);
   border-radius: 6px;
   padding: 1rem;
   margin: 1.5rem 0;
@@ -227,7 +348,7 @@ th, td {
 }
 
 th {
-  background-color: #f8f9fa;
+  background-color: var(--cream);
   font-weight: 600;
 }
 
@@ -244,4 +365,62 @@ img {
   max-width: 200px;
   margin: 0 auto 2rem;
   display: block;
+}
+
+/* Hero banner profile image - circular and centered */
+.hero-banner img.rounded-circle {
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 50% !important;
+}
+
+/* Comprehensive sidebar text selection color override */
+.sidebar ::selection,
+.sidebar-navigation ::selection,
+.quarto-secondary-nav ::selection,
+.sidebar .nav-link ::selection,
+.quarto-sidebar ::selection,
+.quarto-sidebar-menu ::selection,
+.quarto-sidebar-content ::selection,
+nav.sidebar ::selection,
+.sidebar nav ::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+.sidebar ::-moz-selection,
+.sidebar-navigation ::-moz-selection,
+.quarto-secondary-nav ::-moz-selection,
+.sidebar .nav-link ::-moz-selection,
+.quarto-sidebar ::-moz-selection,
+.quarto-sidebar-menu ::-moz-selection,
+.quarto-sidebar-content ::-moz-selection,
+nav.sidebar ::-moz-selection,
+.sidebar nav ::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+/* Global text selection override for lime green */
+::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+/* Table of contents specific selection override */
+.quarto-toc ::selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
+}
+
+.quarto-toc ::-moz-selection {
+  background-color: var(--lime-green) !important;
+  color: black !important;
 }

@@ -1,24 +1,25 @@
 ---
-title: "Name of the application I have published for Homework 1"
+title: "Flappy Goose"
 date: "2024-09-15"
 categories: [GitHub, Vercel, Claude Code]
 ---
 
 ## Overview
 
-This project involved using Claude Code to write the code to needed to deveop an app that ...
+This project involved using Claude Code to write the code to needed to deveop an app that allows users to play the beloved classic "Flappy Bird", but with a twist!
 
 The primary purpose of this app is to:
 
-- ....
-- ....
+- allow users to compete with others and themselves
+- increase the popularity of geese
+- prove to Professor Murff that I know how to publish a web app using Vercel
 
 ## Live Product Demo
 
 <div class="d-flex justify-content-center gap-3 my-4">
   <!-- Open App button -->
   <a class="btn btn-primary d-inline-flex align-items-center"
-     href="https://tetris-game-egc6.vercel.app/"
+     href="https://flappy-goose.vercel.app/"
      target="_blank" rel="noopener"
      aria-label="Open live app">
     <i class="fa-solid fa-window-restore me-2" aria-hidden="true"></i>
@@ -27,7 +28,7 @@ The primary purpose of this app is to:
 
   <!-- GitHub Source button -->
   <a class="btn btn-outline-dark d-inline-flex align-items-center"
-     href="https://github.com/your-user/your-repo"
+     href="https://github.com/EllaJane0/flappy-goose"
      target="_blank" rel="noopener"
      aria-label="Open GitHub source">
     <i class="fa-brands fa-github me-2" aria-hidden="true"></i>
@@ -35,20 +36,78 @@ The primary purpose of this app is to:
   </a>
 </div>
 
-<iframe src="https://tetris-game-egc6.vercel.app/"
+<iframe src="https://flappy-goose.vercel.app/"
         style="width:100%; height:900px; border:none;"
         allowfullscreen>
 </iframe>
 
 ## Technical Details
 
-Framework/Stack: [e.g., React, Quarto, HTML/CSS/JS]
+- Frontend: HTML5 Canvas, CSS3, Vanilla JavaScript
+- Deployment: Vercel (static hosting)
+- Storage: Browser localStorage (for leaderboard)
+- Version Control: Git/GitHub
+- Tools Used: Claude Code
 
-Deployment: GitHub Pages + Vercel
+## [Product Requirements Document](https://github.com/EllaJane0/flappy-goose/blob/main/PDR.md)
 
-Tools Used:
--   Claude Code
+**Project Design Record (PDR) - Flappy Goose**
 
-## Product Requirements Document
+**Project Overview**
+- Project Name: Flappy Goose
+- URL: https://flappy-goose.vercel.app
+- Repository: https://github.com/EllaJane0/flappy-goose
+- Created: September 2025
 
-Paste in the PRD that you submitted to Claude Code
+**Description**
+Flappy Goose is a browser-based game inspired by the classic Flappy Bird, featuring a goose as the main character. The game is built using vanilla HTML5, CSS3, and JavaScript, deployed on Vercel for global accessibility.
+
+**Architecture**
+
+**Technology Stack**
+- Frontend: HTML5 Canvas, CSS3, Vanilla JavaScript
+- Deployment: Vercel
+- Version Control: Git/GitHub
+- Tools Used: Claude Code
+- Hosting: Static site hosting
+
+**File Structure**
+```
+flappy-goose/
+├── index.html # Main HTML file with game UI
+├── game.js # Core game logic and mechanics
+├── vercel.json # Vercel deployment configuration
+└── PDR.md # This project design record
+```
+
+**Game Design**
+
+**Core Mechanics**
+1. Player Control: Spacebar or click to make the goose flap and gain altitude
+2. Physics: Gravity constantly pulls the goose downward
+3. Obstacles: Green pipes with gaps that the player must navigate through
+4. Scoring: Points awarded for each pipe successfully passed
+5. Collision Detection: Game ends when goose hits pipes or boundaries
+
+**Visual Design**
+- Theme: Sky blue to green gradient background representing sky to ground
+- Character: Golden goose with orange beak and black eye
+- Obstacles: Green pipes (top and bottom)
+- UI: Clean, simple interface with score display and game over screen
+
+**Game States**
+1. Start Screen: Initial state waiting for player input
+2. Playing: Active gameplay with physics and collision detection
+3. Game Over: End state with final score and restart option
+
+**Technical Implementation**
+
+**Canvas Rendering**
+- 400x600 pixel game canvas
+- 60fps game loop using requestAnimationFrame
+- Real-time rendering of game objects
+
+**Game Physics**
+- Gravity: 0.6 units per frame
+- Jump velocity: -12 units (upward)
+- Pipe movement speed: 2 units per frame
