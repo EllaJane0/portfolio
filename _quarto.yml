@@ -4,9 +4,9 @@ project:
 
 website:
   title: ""
-  favicon: images/prototyping-favicon.png
+  favicon: favicon.svg
   navbar:
-    background: #990033
+    background: "#990033"
     left:
       - href: index.qmd
         text: Home
