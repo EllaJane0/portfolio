@@ -1,19 +1,5 @@
 {
   "buildCommand": "echo 'Using pre-built _site directory'",
   "outputDirectory": "_site",
-  "installCommand": "echo 'No dependencies to install'",
-  "functions": {},
-  "routes": [
-    {
-      "src": "/(.*\\.css)",
-      "dest": "/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=3600"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "installCommand": "echo 'No dependencies to install'"
 }
