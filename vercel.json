@@ -5,11 +5,15 @@
   "functions": {},
   "routes": [
     {
-      "src": "/styles.css",
-      "dest": "/styles.css",
+      "src": "/(.*\\.css)",
+      "dest": "/$1",
       "headers": {
         "Cache-Control": "public, max-age=3600"
       }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
